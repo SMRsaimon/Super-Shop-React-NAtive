@@ -2,9 +2,9 @@ import React from "react";
 import { Button, Image, StyleSheet, Text, View } from "react-native";
 
 const Card = ({ product }) => {
-  const { key, category, name, holePrice, img } = product;
+  const { key, category, name, price, img } = product;
 
-  console.log(img);
+
 
   const onPressLearnMore = () => {};
   return (
@@ -18,7 +18,8 @@ const Card = ({ product }) => {
         />
       </View>
 
-      <Text>{name.slice(0, 30)}</Text>
+      <Text style={{marginTop:10, marginBottom:10}}>{name.slice(0, 30)}</Text>
+      <Text style={{fontSize:18, fontWeight:600, marginBottom:10}}>Price :  ${price}</Text>
       <Button
         onPress={onPressLearnMore}
         title="Buy Now"
