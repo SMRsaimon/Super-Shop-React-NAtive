@@ -1,17 +1,16 @@
 import React from 'react';
-import { SafeAreaView, StatusBar, StyleSheet, Text, View } from 'react-native';
+import { SafeAreaView, ScrollView, StatusBar, StyleSheet, Text, View } from 'react-native';
 import Home from './components/Home/Home';
 
 import Shop from './components/Shop/Shop';
 export default function App() {
   return (
     <SafeAreaView> 
-   
-     <Shop></Shop>
-      <StatusBar style="auto" />
-    <View style={styles.container}>
-     <Home/>
-    </View>
+      <ScrollView>
+        <Home></Home>
+       <Shop></Shop>
+      </ScrollView>
+    <StatusBar style="auto" />
     </SafeAreaView>
   );
 }
