@@ -4,7 +4,7 @@ import fakeData from "../fakeData";
 import Card from "./Card";
 
 const Shop = () => {
-  const [Data, setData] = useState(fakeData.slice(1, 20));
+  const [Data, setData] = useState(fakeData.slice(1, 19));
 
   return (
     <ScrollView>
