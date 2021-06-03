@@ -1,12 +1,14 @@
 import React from 'react';
-import { Text, View } from 'react-native';
+import { ScrollView, Text, View } from 'react-native';
 
 const Shop = () => {
     return (
-       <View>
+       <ScrollView>
+           <View>
 
-           <Text> Shop</Text>
-       </View>
+
+           </View>
+       </ScrollView>
     );
 };
 
