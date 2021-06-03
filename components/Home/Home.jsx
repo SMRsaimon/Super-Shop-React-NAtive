@@ -1,11 +1,10 @@
 import React from 'react';
+import { Text, View } from 'react-native';
 
-const Home = () => {
-    return (
-        <div>
-            <h1>Showing this from home component</h1>
-        </div>
-    );
-};
-
-export default Home;
+export default function Home() {
+  return (
+    <View>
+      <Text>Showing this from home</Text>
+    </View>
+  );
+}
