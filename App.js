@@ -4,8 +4,10 @@ import Footer from './components/Footer/Footer';
 import Home from './components/Home/Home';
 
 import Shop from './components/Shop/Shop';
+
 export default function App() {
   return (
+   
     <SafeAreaView> 
       <ScrollView>
         <Home></Home>
@@ -14,6 +16,7 @@ export default function App() {
       </ScrollView>
     <StatusBar style="auto" />
     </SafeAreaView>
+   
   );
 }
 const styles = StyleSheet.create({

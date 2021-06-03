@@ -1,11 +1,12 @@
 import React, { useState } from "react";
-import { ScrollView, Text, View, StyleSheet } from "react-native";
-import fakeData from "../fakeData";
+import { ScrollView, View, StyleSheet } from "react-native";
+import fakeData from "../fakeData/laptop";
 import Card from "./Card";
 
 const Shop = () => {
-  const [Data, setData] = useState(fakeData.slice(1, 19));
+  const [Data, setData] = useState(fakeData);
 
+  console.log(fakeData)
   return (
     <ScrollView>
       <View style={styles.ShopContainer}>
