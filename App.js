@@ -1,26 +1,20 @@
 import React from 'react';
-import { SafeAreaView, ScrollView, StatusBar, StyleSheet, Text, View } from 'react-native';
-import Footer from './components/Footer/Footer';
-import Home from './components/Home/Home';
+import HomeScreen from './components/Home/Home';
+import ShopScreen from './components/Shop/Shop';
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
 
-import Shop from './components/Shop/Shop';
+const Stack = createStackNavigator();
 export default function App() {
   return (
-    <SafeAreaView> 
-      <ScrollView>
-        <Home></Home>
-       <Shop></Shop>
-       <Footer/>
-      </ScrollView>
-    <StatusBar style="auto" />
-    </SafeAreaView>
+    <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen name="Home" component={HomeScreen} />
+      </Stack.Navigator>
+      {/* <Stack.Navigator>
+        <Stack.Screen name="Shop" component={ShopScreen} />
+      </Stack.Navigator> */}
+    </NavigationContainer>
   );
 }
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+
