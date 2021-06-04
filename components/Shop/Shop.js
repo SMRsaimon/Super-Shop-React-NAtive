@@ -26,6 +26,7 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     marginLeft: "auto",
     marginRight: "auto",
+    transition: "transform 0.5s ease-in-out"
   },
 });
 

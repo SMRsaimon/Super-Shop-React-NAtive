@@ -16,20 +16,15 @@ const styles = StyleSheet.create({
         flexDirection: "row",
         padding: 10,
         justifyContent: 'center',
-        backgroundColor: "rgb(132, 21, 132)",
+        backgroundColor: "#ff4880",
         marginBottom: 20,
-
-
-
-
-
     }
     ,
     link: {
         padding: 10,
         color: "white",
-        cursor: "pointer"
-
+        cursor: "pointer",
+        fontWeight: 700
     }
 })
 

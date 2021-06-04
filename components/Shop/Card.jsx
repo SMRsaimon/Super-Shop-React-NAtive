@@ -23,7 +23,7 @@ const Card = ({ product }) => {
       <Button
         onPress={onPressLearnMore}
         title="Buy Now"
-        color="#841584"
+        color="#ff4880"
         accessibilityLabel="Learn more about this purple button"
       />
     </View>
@@ -37,7 +37,7 @@ const styles = StyleSheet.create({
     marginBottom: 10,
     height: 270,
     borderWidth: 1,
-    borderColor: "gray",
+    borderColor: "gray"
   },
   tinyLogo: {
     width: 80,

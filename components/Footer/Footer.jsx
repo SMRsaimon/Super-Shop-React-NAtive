@@ -16,7 +16,7 @@ const styles=StyleSheet.create({
         width:"100%",
         padding:30,
         display:"flex",
-        backgroundColor:"rgb(132, 21, 132)",
+        backgroundColor:"#ff4880",
         justifyContent:"center"
 
 
