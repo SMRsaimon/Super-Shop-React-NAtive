@@ -6,12 +6,11 @@ import Card from "./Card";
 const Shop = () => {
   const [Data, setData] = useState(fakeData);
 
-  console.log(fakeData)
   return (
     <ScrollView>
       <View style={styles.ShopContainer}>
         {Data.map((pd) => (
-          <Card product={pd}></Card>
+          <Card  key={pd.key} product={pd}></Card>
         ))}
       </View>
     </ScrollView>

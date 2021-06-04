@@ -23,8 +23,7 @@ const styles = StyleSheet.create({
     link: {
         padding: 10,
         color: "white",
-        cursor: "pointer",
-        fontWeight: 700
+
     }
 })
 
