@@ -1,35 +1,37 @@
-import React, { Component } from 'react';
-import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
-
+import React from 'react';
+import { StyleSheet, Text, View } from 'react-native';
 const Home = () => {
     return (
-        <View style={styles.textStyle}>
-            <Text>
-                Welcome, Home Screen
-        </Text>
-            <TouchableOpacity style={styles.buttonContainerStyle} onPress={() => this.props.navigation.navigate('./Shop')}>
-                <Text style={styles.buttonTextStyle}>Open About Screen</Text>
-            </TouchableOpacity>
+        <View style={styles.Navigation}>
+            <Text style={styles.link} >Home</Text>  <Text style={styles.link} >Shop </Text><Text style={styles.link} >Order History </Text>
         </View>
     );
 };
 
 const styles = StyleSheet.create({
-    textStyle: {
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center'
-    },
-    buttonContainerStyle: {
-        backgroundColor: '#222',
-        borderRadius: 5,
+
+    Navigation: {
+
+        display: "flex",
+        flexDirection: "row",
         padding: 10,
-        margin: 20
-    },
-    buttonTextStyle: {
-        fontSize: 20,
-        color: '#fff'
+        justifyContent: 'center',
+        backgroundColor: "rgb(132, 21, 132)",
+        marginBottom: 20,
+
+
+
+
+
+    }
+    ,
+    link: {
+        padding: 10,
+        color: "white",
+        cursor: "pointer"
+
     }
 })
+
 
 export default Home;
